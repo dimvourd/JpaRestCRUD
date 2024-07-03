@@ -29,7 +29,6 @@ public class EmployeeRestController {
     }
 
     @GetMapping("/{employeeId}")
-    @Transactional
     public Employee getEmployeeById(@PathVariable("employeeId") Long Id){
 
         return service.findById(Id);
