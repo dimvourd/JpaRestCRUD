@@ -9,4 +9,8 @@ public interface EmployeeDAO {
 
     Employee findById(Long Id);
 
+    Employee saveOrUpdate(Employee employee);
+
+    void deleteById(Long Id);
+
 }
